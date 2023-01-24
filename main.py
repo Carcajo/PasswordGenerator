@@ -1,11 +1,6 @@
 import random
-lettersDown = "abcdefghijklmnopqrstuvwxyz"
-lettersUp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-symbols = "{}[](),;:#$%-_"
-numbers = "1234567890"
-
-summa = lettersUp + lettersDown + symbols + numbers
+symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890{}[](),;:#$%-_"
 length = 8
-password = "".join(random.sample(summa,length))
+password = "".join(random.sample(symbols,length))
 
 print(password)
